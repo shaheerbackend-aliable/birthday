@@ -1,60 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ayien</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    <div class="container-fluid" style="background-color: #007fff;">
-
-        <div class="mx-auto">
+    <div class="container-fluid" style="background-color: #007fff">
+      <div class="mx-auto">
         <div class="typeJsWrapper">
-            <div class="container">
-              <h1 class="typeJsText" data-typetext="Someone Stole something from me!!"></h1>
+          <div class="container">
+            <div class="mess d-flex flex-row">
+              <dotlottie-player
+                src="https://lottie.host/4ac9a819-e379-491e-bbed-24385ccd49d3/oDYVyiUxvB.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></dotlottie-player>
+              <h1
+                class="typeJsText"
+                data-typetext="Someone Stole something from me!!"
+              ></h1>
             </div>
           </div>
         </div>
+      </div>
 
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-primary stole">Wanna know who stole?</button>
+      </div>
 
-    <dotlottie-player src="https://lottie.host/4ac9a819-e379-491e-bbed-24385ccd49d3/oDYVyiUxvB.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+      <div class="hidden pt-5 bounceIn">
+        <div class="container">
+          <div
+            class="show d-flex align-items-center flex-column"
+            id="showContent"
+          >
+            <div class="dialog">
+              <h3 open>Ab yeh na poochna kya😑😑</h3>
+            </div>
+            <div class="heart-less d-flex">
+              <div class="anime">
+                <dotlottie-player
+                  src="https://lottie.host/aab28729-2d59-4ba4-bfb8-5bcebde922bb/LlXjpIgQi8.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 300px; height: 300px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </div>
+              <div class="info">
+                <h3 id="dmboo" class="bounceIn">It's You...You Dumboo!!</h3>
+                <button id="more" class="btn btn-danger">
+                  <a href="gift.html" class="text-decoration-none text-light"
+                    >Click Me</a
+                  >
+                </button>
+              </div>
+            </div>
 
-    
-    <div style="display: flex; justify-content: center;">
-        <Button class="btn btn-primary"  onclick="button()">Wanna know who stole?</Button>
+            <button id="hero" class="btn btn-warning w-25 mt-4">
+              Wanna Know?😕😕
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="show" style="display: none;" id="showContent">
-      <dialog open>It's You...You Dumboo!!</dialog>
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-        <dotlottie-player src="https://lottie.host/aab28729-2d59-4ba4-bfb8-5bcebde922bb/LlXjpIgQi8.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-      <dialog open>Ab yeh na poochna kya😑😑</dialog>
-
-      <button class="btn btn-warning"><a href="gift.html">Wanna Know?😕😕</a></button>
-
-    </div>
-
-    </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-    <script>
-        function button(){
-            var show= document.getElementById('showContent');
 
-            if (show.style.display=='none') {
-                show.style.display='block'
-            } else {
-                show.style.display='none'
-            }
-        }
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".hidden").hide();
+
+        $(".stole").click(function () {
+          $(".hidden").show();
+        });
+
+        $("#dmboo, .anime, #more").hide();
+
+        $("#hero").click(function () {
+          $("#dmboo, .anime, #more").show();
+          $(".dialog, #hero").hide();
+        });
+      });
     </script>
+
+    <!-- <script>
+
+      function button() {
+        var show = document.getElementById("showContent");
+
+        if (show.style.display == "none") {
+          show.style.display = "block";
+        } else {
+          show.style.display = "none";
+        }
+      }
+    </script> -->
   </body>
 </html>
